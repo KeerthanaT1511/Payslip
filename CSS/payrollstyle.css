@@ -1,0 +1,144 @@
+*{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+body {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    background: #f3f3f3;
+}
+ul {
+    padding-top: 50px;
+    justify-content: center;
+    
+}
+li{
+    list-style-type: none;
+    
+}
+li a{
+    
+    text-decoration: none;
+    color: #fff;
+    padding-top: 20px;
+}
+
+#sideBar {
+    height: 100vh;
+    background-color: #455A64;
+    width: 15%;
+
+}
+a:hover {
+    color: #f8cc14;
+}
+.monthBtn{
+    background-color: #000;
+    width: 130px;
+    color:#fff;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.fa-calendar{
+    color:#fff;
+}
+#downloadBtn{
+    border: transparent;
+    border-radius: 5px;
+    background-color: #f8cc14;
+    color: #000;
+    width: 130px;
+    font-weight: bold;
+}
+.container1{
+    background-color: #feeba8;
+    height:500px;
+}
+.emp{
+    font-weight: bold;
+    font-size: 20px;
+}
+.container1 {
+    background: #feeba8;
+    padding: 30px 40px;
+    border-radius: 10px;
+    max-width: 1200px;
+    height: 600px;
+    margin: auto;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px; /* horizontal gap */
+    margin-bottom: 40px; /* vertical gap between rows */
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.emp {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px; /* space between label and input */
+}
+
+input {
+    padding: 10px 14px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    background: transparent;
+}
+
+input[type="date"],
+input[type="number"],
+input[type="text"] {
+    height: 40px;
+}
+
+#submitBtn{
+    text-decoration: none;
+    color:#000;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: #f8cc14;
+    width:200px;
+    font-weight: bold;
+    height: 40px;
+    text-align: center;
+    padding-top: 5px;
+}
+#cancelBtn{
+    width:130px;
+    background-color: #455A64;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.heading{
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

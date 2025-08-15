@@ -1,0 +1,126 @@
+*{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+body {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    background: #f3f3f3;
+}
+ul {
+    padding-top: 50px;
+    justify-content: center;
+    
+}
+li{
+    list-style-type: none;
+    
+}
+li a{
+    
+    text-decoration: none;
+    color: #fff;
+    padding-top: 20px;
+}
+
+#sideBar {
+    height: 100vh;
+    background-color: #455A64;
+    width: 15%;
+
+}
+a:hover {
+    color: #f8cc14;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    
+    padding: 30px;
+    
+}
+
+h2 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.details {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background: #fff8dc;
+}
+
+.details strong{
+    display: inline-block;
+    width: 160px;
+    font-weight: bold;
+    font-size: larger;
+}
+#payslipData p{
+    font-weight: 700;
+    font-size: medium;
+}
+
+.payslip-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+}
+
+
+.date-section {
+    text-align: right;
+}
+
+
+.payslip-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #f8cc14;
+    font-weight: bold;
+}
+
+.payslip-table th
+ {
+    border: 1px solid #000;
+    padding: 8px;
+    font-weight: bold;
+    
+}
+.payslip-table td {
+    border: 1px solid #000;
+    padding: 8px;
+    background-color: transparent !important;
+}
+.payslip-table tbody tr{
+    background-color: transparent !important;
+}
+
+.payslip-table thead tr:first-child {
+    background: transparent; 
+}
+.payslip-table thead tr:nth-child(2) {
+    background: transparent;
+}
+
+
+.total-earnings {
+    margin-top: 20px;
+    text-align: right;
+    font-weight: bold;
+}

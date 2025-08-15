@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Playwrite+HU:wght@100..400&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Volkhov&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/overviewstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+
+<body>
+
+    
+    <div class="d-flex">
+
+        
+        <div id="sideBar">
+            <button class="btn btn-outline-secondary d-md-none mb-3" id="closeSidebar">
+                &times; Close
+            </button>
+            <ul id="option">
+                <li><a href="#"><i class="fa-solid fa-cookie-bite"></i> Overview</a></li>
+                <li><a href="payroll.html" target="_blank"><i class="fa-solid fa-receipt"></i> Payroll</a></li>
+                <li><a href="Payslip.html"><i class="fa-solid fa-receipt"></i> Payslip</a></li>
+            </ul>
+        </div>
+
+
+        <div class="flex-grow-1">
+
+            <nav class="navbar navbar-light">
+                <div class="container-fluid">
+                    <button class="btn btn-outline-secondary d-md-none" id="openSidebar">
+                        &#9776; Menu
+                    </button>
+                    <a class="navbar-brand">Good Morning !!!</a>
+                    <div class="position-relative mx-auto">
+                        <input type="search" class="form-control me-5" placeholder="Search" aria-label="Search">
+                        <i
+                            class="fa-solid fa-magnifying-glass position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                    </div>
+                    <i class="fa-regular fa-bell me-3"><span id="count">5</span></i>
+                    <img src="Images/31a1bed54d5a6d7080bf6f415ba8bd0407de09ea.jpg" alt="image" class="round-image">
+
+                </div>
+            </nav>
+            <section id="footer" class="my-5">
+                
+                <div class="container">
+                    <!-- Stats Row -->
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="stats-box text-center">
+                                <div class="image-container">
+                                    <img src="Images/Ellipse 44@2x.png" class="bg-image">
+                                    <img src="Images/Vector@2x.png" class="overlay-image">
+                                </div>
+                                <div class="stats-text">Total Employees</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="stats-box text-center">
+                                <div class="image-container">
+                                    <img src="Images/Ellipse 44@2x.png" class="bg-image">
+                                    <img src="Images/leaves.png" class="overlay-image">
+                                </div>
+                                <div class="stats-text">Number of Leave</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="stats-box text-center">
+                                <div class="image-container">
+                                    <img src="Images/Ellipse 44@2x.png" class="bg-image">
+                                    <img src="Images/employee.png" class="overlay-image">
+                                </div>
+                                <div class="stats-text">New Employees</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="stats-box text-center">
+                                <div class="image-container">
+                                    <img src="Images/Ellipse 44@2x.png" class="bg-image">
+                                    <img src="Images/flight.png" class="overlay-image">
+                                </div>
+                                <div class="stats-text">Holiday of this Year</div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Calendar + Meetings Row -->
+                    <div class="row g-4">
+                        <!-- Calendar -->
+                        
+                        <div class="col-md-6 col-lg-5">
+                            <strong id="calendar">Calendar</strong>
+                            <div class="calendar-container p-3">
+                                
+                                <header class="calendar-header">
+                                    
+                                    <p class="calendar-current-date"></p>
+                                    <div class="calendar-navigation">
+                                        <span id="calendar-prev">
+                                            <i class="fa-solid fa-chevron-left"></i>
+                                        </span>
+                                        <span id="calendar-next">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </span>
+                                    </div>
+                                </header>
+                                <div class="calendar-body">
+                                    <ul class="calendar-weekdays">
+                                        <li>Sun</li>
+                                        <li>Mon</li>
+                                        <li>Tue</li>
+                                        <li>Wed</li>
+                                        <li>Thu</li>
+                                        <li>Fri</li>
+                                        <li>Sat</li>
+                                    </ul>
+                                    <ul class="calendar-dates"></ul>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Upcoming Meetings -->
+                        <div class="col-md-6 col-lg-7">
+                            
+                                <h5 class="me-5">Upcoming Meetings <a href="#" class="float-end">View All</a></h5>
+                                <div class="meetings-container">
+                                <div class="meeting-card d-flex me-5">Client Meeting - 10:00 AM <div class="days ms-auto">Wed<br> May17</div></div>
+                                <div class="meeting-card d-flex me-5">Team Meeting - 11:00 AM <div class="days ms-auto">Wed<br> May17</div></div>
+                                <div class="meeting-card d-flex me-5">HR Interview - 2:00 PM<div class="days ms-auto">Mon<br> May17</div></div>
+                                <div class="meeting-card d-flex me-5">Client Meeting - 4:00 PM<div class="days ms-auto">Mon<br> May17</div></div>
+                                
+                               
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="JS/overviewscript.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

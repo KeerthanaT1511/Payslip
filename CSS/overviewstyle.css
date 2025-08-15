@@ -1,0 +1,261 @@
+* {
+    margin: 0px;
+    padding: 0%;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    background: #f3f3f3;
+}
+
+.navbar {
+    margin-top: 50px;
+    margin-left: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    background-color: #fff2b0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.form-control {
+    background-color: transparent;
+    border: 1px solid;
+    font-weight: bold;
+}
+
+.fa-magnifying-glass {
+    color: #f8cc14;
+}
+
+.fa-bell,
+img {
+    font-size: 30px;
+    justify-content: end;
+    align-items: end;
+}
+
+.fa-bell {
+    /* margin-left:300px; */
+    position: relative;
+}
+
+#count {
+    position: absolute;
+    width: 20px;
+    height: 15px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: black;
+    background-color: red;
+    font-size: 10px;
+    margin-left: -15px;
+}
+
+.container {
+    margin: 0%;
+}
+
+ul {
+    padding-top: 50px;
+    justify-content: center;
+}
+
+li,
+a {
+    list-style-type: none;
+    text-decoration: none;
+    color: #fff;
+    padding-top: 20px;
+
+}
+
+#sideBar {
+    height: 100vh;
+    background-color: #455A64;
+    width: 15%;
+
+}
+
+a:hover {
+    color: #f8cc14;
+}
+
+.round-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#footer {
+    margin-left: 50px;
+    width: 90%;
+    background-color: #fff2b0;
+    height: 600px;
+}
+
+.stats-box {
+    background: #FFD600;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+    min-width: 150px;
+}
+
+.image-container {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+}
+
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: auto;
+}
+
+.stats-text {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #000;
+}
+
+/* Calendar Styling */
+#calendar{
+    font-size: xx-large;
+    font-weight: bold;
+}
+.calendar-container {
+    background: #feeba8;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calendar-header p {
+    font-weight: 600;
+    margin: 0;
+}
+
+.calendar-navigation span {
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 18px;
+    color: #555;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+.calendar-weekdays, .calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 0;
+    
+}
+
+.calendar-weekdays li {
+    font-weight: bold;
+    padding: 8px 0;
+    font-size: 13px;
+    color:#000;
+}
+
+.calendar-dates li {
+    padding: 10px 0;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+    color:#000;
+}
+
+.calendar-dates li:hover {
+    background: #f0f0f0;
+}
+
+
+h5 {
+    margin-bottom: 15px;
+    font-size: xx-large;
+    font-weight: bold;
+    
+}
+
+.float-end{
+    padding-top: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    color: red;
+    /* width: fit-content; */
+}
+.meetings-container {
+    width: 70%;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    background-color: #feeba8;
+    margin: 50px 100px;
+}
+.meeting-card {
+    width: 60%;
+    margin-left: 100px;
+    background: #feeba8;
+    padding: 10px 15px;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+.days{
+    margin-top: 0%;
+    font-weight: bold;
+}
+.meeting-card:hover {
+    background: #eaeaea;
+}
+
+@media (max-width: 767px) {
+    #sideBar {
+        position: fixed;
+        top: 0;
+        left: -250px;
+        height: 100%;
+        background: #f8f9fa;
+        transition: left 0.3s ease;
+        z-index: 1050;
+    }
+
+    #sideBar.active {
+        left: 0;
+    }
+}
